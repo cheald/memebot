@@ -8,7 +8,7 @@ function quote(bot, _words, from, to) {
 
 	YahooStocks.lookup(_words[1]).then(function(res){
 		let curr = res;
-		YahooStocks.history(_words[1]).then(function(res){
+		YahooStocks.history(_words[1],{range:'5d'}).then(function(res){
 			let old = res.previousClose;
 			let change =  curr.currentPrice - old;
 			let percentage = ( change / curr.currentPrice ) * 100;

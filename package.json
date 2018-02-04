@@ -8,6 +8,6 @@
     "pg": "^6.2.4",
     "request": "latest",
     "winston": "latest",
-    "yahoo-stocks": "^2.0.1"
+    "yahoo-stocks": "rmzg/yahoo-stocks"
   }
 }
