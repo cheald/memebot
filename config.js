@@ -1,7 +1,7 @@
 module.exports = {
-  channels: ["#elitistjerks"],
-  server: "NuclearFallout.WA.US.GameSurge.net",
-  botName: "rememe",
+  channels: ["#elitistjerks","#buubot"],
+  server: "irc.gamesurge.net",
+  botName: "memer",
   urlSummarizer: {
     yieldToOtherBots: true,
     otherBots: ["meme"],
