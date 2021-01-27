@@ -12,7 +12,7 @@ function quote(bot, _words, from, to) {
       YahooStocks.history(_words[1]).then(function (res) {
         let old = res.records[res.records.length - 1].open;
         let change = curr.currentPrice - old;
-        let percentage = (change / curr.currentPrice) * 100;
+        let percentage = (change / old) * 100;
         percentage = Math.round(percentage * 100) / 100;
         change = Math.round(change * 100) / 100;
 
